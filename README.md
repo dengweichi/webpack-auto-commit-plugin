@@ -43,7 +43,7 @@
     };
 ```
 
-```
+``` javascript 1.8
   options.plugins.push(new WebpackAutoCommitPlugin({
                  outputDir:null, // 压缩包输出目录,绝对路径
                  remoteAddress:'http://localhost:3000',// 远程服务器地址
