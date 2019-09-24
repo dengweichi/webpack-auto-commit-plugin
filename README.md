@@ -10,7 +10,7 @@
 * commitType.REPLACE 替换策略
     > 采用粗暴的文件替换，会把旧的文件夹删除再覆盖新的上去
 ***
-欢迎star [github邓伟驰](https://github.com/dengweichi/webpack-auto-commit-plugin)
+欢迎star [github](https://github.com/dengweichi/webpack-auto-commit-plugin)
 
 ### 安装
 ```
