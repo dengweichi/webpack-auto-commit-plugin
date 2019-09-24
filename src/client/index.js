@@ -1,8 +1,8 @@
 
 const {commitType} =require('../utils/constant');
-const webpackCommitPlugin = require('./webpackCommitPlugin');
+const WebpackAutoCommitPlugin = require('./webpackAutoCommitPlugin');
 
 module.exports = {
     commitType,
-    webpackCommitPlugin
+    WebpackAutoCommitPlugin
 };

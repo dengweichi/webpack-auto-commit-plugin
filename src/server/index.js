@@ -10,7 +10,6 @@ app.use(fileUpload({}));
 
 app.post('/', function (req, res) {
 
-
     let files = req.files;
     // 校验目标路径是否存在
     if ( req.body.target) {
@@ -66,5 +65,7 @@ app.post('/', function (req, res) {
     }
 
 });
+module.exports = app;
 
-app.listen(3000, () => console.log('服务器启动 端口：3000!'));
+
+//app.listen(3000, () => console.log('服务器已启动'));

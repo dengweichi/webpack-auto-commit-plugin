@@ -10,7 +10,7 @@ const { deleteExtnameFile} = require('../utils');
 /**
  * webpack 提交插件
  */
-class WebpackCommitPlugin {
+class WebpackAutoCommitPlugin {
 
     constructor(options = {}) {
         const defaultOptions = {
@@ -44,7 +44,6 @@ class WebpackCommitPlugin {
             }
             // 在指定的目录下压缩文件
             compressing.zip.compressDir(outputPath, `${this.options.outputDir}.zip`).then((result) => {
-                console.log('success');
                 if (this.options.remoteAddress){
                     const formData = new FormData();
                     formData.append('file', fs.createReadStream(`${this.options.outputDir}.zip`));
@@ -76,4 +75,4 @@ class WebpackCommitPlugin {
 }
 
 
-module.exports = WebpackCommitPlugin;
+module.exports = WebpackAutoCommitPlugin;

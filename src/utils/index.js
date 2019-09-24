@@ -9,7 +9,7 @@ const deleteDir = function (pathname) {
     if (fs.existsSync(pathname)) {
         files = fs.readdirSync(pathname);
         files.forEach((file, index) => {
-            let currentPath = pathname + "/" + file;
+            let currentPath = pathname + "\\" + file;
             if (fs.statSync(currentPath).isDirectory()) {
                 deleteDir(currentPath); //递归删除文件夹
             } else {
@@ -27,7 +27,7 @@ const deleteExtnameFile = function (pathname, extname) {
     if (fs.existsSync(pathname)) {
         files = fs.readdirSync(pathname);
         files.forEach((file, index) => {
-            let currentPath = pathname + "/" + file;
+            let currentPath = pathname + "\\" + file;
             if (fs.statSync(currentPath).isDirectory()) {
                 deleteExtnameFile(currentPath, extname); //递归删除文件夹
             } else {
